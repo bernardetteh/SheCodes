@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=, initial-scale=1.0">
+  <title>Filmbox 🎬</title>
+  <style>
+    h1 {
+      text-align: center;
+      font-size: 40px;
+    }
+    h2 {
+      text-align: center;
+    }
+div {
+  font-family: futura, helvetica;
+  background: black;
+  padding: 40px 70px;
+  margin: 0 auto;
+  display: block;
+  border: solid black;
+  border-radius: 20px;
+  max-width: 600px;
+}
+body {
+  color: white;
+  padding: 30px 60px;
+  background: linear-gradient(87.4deg, rgb(255, 241, 165) 1.9%, rgb(200, 125, 76) 49.7%, rgb(83, 54, 54) 100.5%);
+  font-size: 16px;
+  line-height: 1.5em;
+}
+span {
+  color: rgb(200, 125, 76);
+  display: block;
+}
+.signButton {
+  font-family: futura, helvetica;
+  font-size: 16px;
+  border-radius: 30px;
+  margin: 0 auto;
+  letter-spacing: 0.2px;
+  display: block;
+  border: solid 5px black;
+  padding: 10px 20px 10px 20px;
+  
+}
+
+.signButton:hover {
+  cursor: pointer;
+  opacity: 0.5;
+  box-shadow: 5px 5px 15px rgb(255, 241, 165);
+  transition: 1.5s;
+}
+.footer {
+  font-size: 12px;
+  text-align: center;
+}
+  </style>
+</head>
+<body>
+  <div>
+  <h1>Filmbox 🎬</h1>
+  <h2>Where friends discuss and review films</h2>
+  <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/495/original/Screenshot_2023-02-02_at_10.32.47_AM.png?1675355579" alt="space film" width="600">
+  <p>
+<strong>Filmbox </strong> is a social network for film discussion and reviews. You can also use it to keep track of films you've watched or films you'd like to watch. <span>Invite your friends to join and receive <em>20% off</em> your subscription.</span>
+</p>
+<button class="signButton">✍️ Start reviewing</button>
+<br>
+ <p class="footer">This page was designed by Bernardette Hernandez</p>
+ <hr>
+</body>
+</div>
+<script>
+  function signUp() {
+    let name = prompt("What's your name?");
+    let email = prompt("What's your email?");
+    let age = prompt("Are you at least 18 years of age?");
+    if (age == "yes") {
+alert("Thank you for signing up to Filmbox 🎬 " + name + "! " + "Confirm your subscription in your inbox 📬 ");
+    } else { alert("Sorry " + name + "! " + "You're not old enough to sign up yet!");
+  }
+}
+  let filmButton = document.querySelector(".signButton");
+  filmButton.addEventListener("click", signUp);
+</script>
+</html>
