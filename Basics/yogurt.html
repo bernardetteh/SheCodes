@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=script, initial-scale=1.0" />
+    <title>Greek Yogurt 🥛</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: #7d51e8;
+      }
+      h2 {
+        text-align: center;
+        border: 1px solid #7d51e8;
+        background: #7d51e8;
+        color: white;
+        padding: 10px;
+        font-size: 18px;
+        border-radius: 4px;
+      }
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        max-width: 90%;
+        max-height: 60%;
+      }
+      p {
+        line-height: 1.5;
+        font-size: 13px;
+        margin: 20px 0 10px;
+      }
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        font-family: "Courier New", Courier, monospace;
+        padding: 20px 40px;
+        background: radial-gradient(
+          circle at 7.5% 24%,
+          rgb(237, 161, 193) 0%,
+          rgb(250, 178, 172) 25.5%,
+          rgb(190, 228, 210) 62.3%,
+          rgb(215, 248, 247) 93.8%
+        );
+        border-radius: 40px;
+      }
+      .learn-more {
+        display: block;
+        font-size: 11px;
+        color: #7d51e8;
+        text-decoration: none;
+      }
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+      button {
+        display: block;
+        margin: 0 auto; /* centers it */
+        color: white;
+        background: #7d51e8;
+        font-size: 18px;
+        font-family: "Courier New", Courier, monospace;
+        padding: 15px 20px;
+        border: none; /* do we have to state border none or is it already implied? */
+        border-radius: 10px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      .footer {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Greek Yogurt 🥛</h1>
+      <h2>Especially Greek Yogurt</h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/065/385/original/Screenshot_2023-02-01_at_1.36.40_PM.png?1675280219"
+        alt="Greek Yogurt"
+        width="400"
+      />
+      <p>
+        I believe one of the most valuable tools you can have in the
+        refrigerator is a tub of Greek yogurt. It’s what I lean on most mornings
+        for a quick and satisfying breakfast, but I know that it can also do so
+        much more. I find myself reaching for it when I whip up lunch, dinner,
+        and those in-between snacks, since it can be a swap-in for a number of
+        ingredients. I never tire of the creamy, tangy flavor it brings to
+        recipes. <br />Heres what you need to know to welcome Greek yogurt into
+        your cooking routine
+      </p>
+      <br />
+      <a
+        href="https://en.wikipedia.org/wiki/Strained_yogurt"
+        target="_blank"
+        class="learn-more"
+        >Learn more on Wikipedia</a
+      >
+      <button class="buy-button">👉 Buy Greek Yogurt</button>
+      <p class="footer">
+        This page was built by
+        <a href="bernardette.dev" target="_blank"> Bernardette Hernandez</a>
+      </p>
+      <script>
+        function buyFunction() {
+          let name = prompt("What is your name?");
+          let email = prompt("what is your email address?");
+          let emoji = prompt("what is your favorite emoji?");
+
+          alert(
+            "Thank you " +
+              name +
+              "We'll be in touch have a lot of Yogurt!" +
+              emoji
+          );
+        }
+        let buyButton = document.querySelector(".buy-button");
+        buyButton.addEventListener("click", buyFunction);
+      </script>
+    </div>
+  </body>
+</html>
